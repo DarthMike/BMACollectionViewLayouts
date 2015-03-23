@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ..
 
 SPEC CHECKSUMS:
-  BMACollectionViewLayouts: a1f5c9ddb880597f1b77fd0f1954abd2c0dafa7e
+  BMACollectionViewLayouts: 4488f11dda10f8cc502cd9eac5c3536d88529b8a
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0

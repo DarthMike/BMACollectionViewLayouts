@@ -24,6 +24,7 @@
 
 #import "MasterViewController.h"
 #import "ReorderableViewController.h"
+#import "LineLayoutViewController.h"
 
 @interface MasterViewController ()
 
@@ -75,7 +76,8 @@
 }
 
 - (NSDictionary *)demosToControllers {
-    return @{@"Reorderable flow layout" : [ReorderableViewController class]};
+    return @{@"Reorderable flow layout" : [ReorderableViewController class] ,
+             @"Line layout" : [LineLayoutViewController class]};
 }
 
 

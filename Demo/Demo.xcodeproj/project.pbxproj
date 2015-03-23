@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47033F7B1AC068CD00D40F87 /* LineLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47033F7A1AC068CD00D40F87 /* LineLayoutViewController.m */; };
+		47033F7D1AC0690000D40F87 /* LineLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47033F7C1AC0690000D40F87 /* LineLayoutViewController.xib */; };
 		4745FDB61AAF51B20082DCB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4745FDA61AAF51B20082DCB0 /* AppDelegate.m */; };
 		4745FDB71AAF51B20082DCB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745FDA81AAF51B20082DCB0 /* LaunchScreen.xib */; };
 		4745FDB81AAF51B20082DCB0 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4745FDAB1AAF51B20082DCB0 /* CustomCollectionViewCell.m */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47033F791AC068CD00D40F87 /* LineLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayoutViewController.h; sourceTree = "<group>"; };
+		47033F7A1AC068CD00D40F87 /* LineLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutViewController.m; sourceTree = "<group>"; };
+		47033F7C1AC0690000D40F87 /* LineLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineLayoutViewController.xib; sourceTree = "<group>"; };
 		4745FD7C1AAF51550082DCB0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4745FD801AAF51550082DCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4745FDA51AAF51B20082DCB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +62,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47033F771AC068A500D40F87 /* Reorderable layout */ = {
+			isa = PBXGroup;
+			children = (
+				4745FDB11AAF51B20082DCB0 /* ReorderableViewController.h */,
+				4745FDB21AAF51B20082DCB0 /* ReorderableViewController.m */,
+				4745FDB31AAF51B20082DCB0 /* ReorderableViewController.xib */,
+			);
+			name = "Reorderable layout";
+			sourceTree = "<group>";
+		};
+		47033F781AC068AF00D40F87 /* Line layout */ = {
+			isa = PBXGroup;
+			children = (
+				47033F791AC068CD00D40F87 /* LineLayoutViewController.h */,
+				47033F7A1AC068CD00D40F87 /* LineLayoutViewController.m */,
+				47033F7C1AC0690000D40F87 /* LineLayoutViewController.xib */,
+			);
+			name = "Line layout";
+			sourceTree = "<group>";
+		};
 		4745FD731AAF51550082DCB0 = {
 			isa = PBXGroup;
 			children = (
@@ -88,9 +113,8 @@
 				4745FDAE1AAF51B20082DCB0 /* Main.storyboard */,
 				4745FDAF1AAF51B20082DCB0 /* MasterViewController.h */,
 				4745FDB01AAF51B20082DCB0 /* MasterViewController.m */,
-				4745FDB11AAF51B20082DCB0 /* ReorderableViewController.h */,
-				4745FDB21AAF51B20082DCB0 /* ReorderableViewController.m */,
-				4745FDB31AAF51B20082DCB0 /* ReorderableViewController.xib */,
+				47033F771AC068A500D40F87 /* Reorderable layout */,
+				47033F781AC068AF00D40F87 /* Line layout */,
 				4745FD7F1AAF51550082DCB0 /* Supporting Files */,
 				4745FDB41AAF51B20082DCB0 /* UICollectionView+BMADecorators.h */,
 				4745FDB51AAF51B20082DCB0 /* UICollectionView+BMADecorators.m */,
@@ -185,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4745FDBE1AAF51B20082DCB0 /* ReorderableViewController.xib in Resources */,
+				47033F7D1AC0690000D40F87 /* LineLayoutViewController.xib in Resources */,
 				4745FDBB1AAF51B20082DCB0 /* Main.storyboard in Resources */,
 				4745FDB71AAF51B20082DCB0 /* LaunchScreen.xib in Resources */,
 				4745FDB91AAF51B20082DCB0 /* Images.xcassets in Resources */,
@@ -236,6 +261,7 @@
 				4745FDBD1AAF51B20082DCB0 /* ReorderableViewController.m in Sources */,
 				4745FDB61AAF51B20082DCB0 /* AppDelegate.m in Sources */,
 				4745FDBA1AAF51B20082DCB0 /* main.m in Sources */,
+				47033F7B1AC068CD00D40F87 /* LineLayoutViewController.m in Sources */,
 				4745FDB81AAF51B20082DCB0 /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
