@@ -34,9 +34,14 @@
  */
 @interface BMALineFlowLayout : UICollectionViewFlowLayout
 
-@property (nonatomic, strong) NSNumber *linePosition;
 
+/// Specify where in the non-scrolling direction, the items should be laid out
+@property (nonatomic, assign) CGFloat linePosition;
+
+/// If YES, then items will be paginated, with the page size determined by the item size in the scroll direction. Default is NO.
 @property (nonatomic, getter=isPaginationEnabled) BOOL paginationEnabled;
+
+/// Page dimension is calculated from the items.itemSize and the interItemSpacing properties of the UICollectionViewFlowLayout superclass.
 @property (nonatomic, readonly) CGFloat pageDimension;
 
 @end

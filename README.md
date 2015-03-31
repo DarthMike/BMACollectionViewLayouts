@@ -77,3 +77,19 @@ And how it looks like:
 ###Important
 
 The layout needs to copy the cell in order to create a view it can move around. It does this instead of creating the snapshot, as you may want to reconfigure your cell for dragging before it actually moves. So you need to implement NSCopying in your cell and return a valid copy.
+
+
+##BMALineFlowLayout
+This is a flow layout subclass and it is used to display a line of elements. For the horizontal scrolling case, this happens when the elements height are more than half the collection view ``contensize.height``.
+
+It implements features often needed for simple flow layout subclasses:
+
+- Pagination, with smaller-than-page elements: This is not so straighforward to implement right, see http://stackoverflow.com/questions/13492037/targetcontentoffsetforproposedcontentoffsetwithscrollingvelocity-without-subcla/22238385#22238385
+
+
+- Controlling line position: By default, when items flow in one line, UICollectionViewFlowLayout will position them in the middle of the contentSize. To change this and control where that line is, you can change a property in the layout.
+
+This layout looks like this:
+
+![image](demoimages/linelayout.gif)
+

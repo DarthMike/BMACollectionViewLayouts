@@ -48,9 +48,9 @@
     CGFloat originX = attribute.frame.origin.x;
     CGFloat originY = attribute.frame.origin.y;
     if (self.horizontalScroll) {
-        originY = [self.linePosition floatValue];
+        originY = self.linePosition;
     } else {
-        originX = [self.linePosition floatValue];
+        originX = self.linePosition;
     }
     
     attribute.frame = (CGRect){
